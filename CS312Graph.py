@@ -20,6 +20,7 @@ class CS312GraphNode:
         self.neighbors = [] #node_neighbors
         self.dist = 0
         self.prev = None
+        self.visited = False
 
     def addEdge( self, neighborNode, weight ):
         self.neighbors.append( CS312GraphEdge(self,neighborNode,weight) )
